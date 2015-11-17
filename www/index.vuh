@@ -51,7 +51,7 @@ set check_url 0
 	set error_p 0
 	set error_message ""
 
-	set is_live [ad_parameter AutoApproveCommentsP {general-comments} {t}]
+	set is_live [im_parameter AutoApproveCommentsP {general-comments} {t}]
 
 	set creation_ip [ad_conn peeraddr]
 
