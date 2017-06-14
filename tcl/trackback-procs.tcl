@@ -170,7 +170,7 @@ ad_proc -public trackback::send_ping {
 	set form_vars [export_vars -url {url excerpt title blog_name}]
 	ns_log debug "trackback: full url = ${ping_url}&${form_vars}"
 	# old style GET
-	set result [ns_httpget ${ping_url}&${form_vars} 60]
+	set result [im_httpget ${ping_url}&${form_vars} 60]
         ns_log debug "trackback: trackback returned: $result"
     } else {
 	#must be POST
